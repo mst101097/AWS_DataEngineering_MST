@@ -5,7 +5,7 @@ Go to EC2 Dashboard and then to Instances.
 Select the instance for which you want to create AMI.
 
 Go to Storage and click on the Volume.
-
+ls
 Create Snapshot for the Volume selected.
 
 Go to Actions and click on Create Image

@@ -1,8 +1,10 @@
 import json
+from download_file import downloadfile
 
 def lambda_handler(event, context):
     # TODO implement
+    res = downloadfile('2021-01-29-0.json.gz')
     return {
-        'statusCode': 200,
-        'body': json.dumps('Hello from Lambda using gha downloader!')
+        'statusCode': res.status_code,
+        'body': json.dumps('Downloaded successfully!')
     }
